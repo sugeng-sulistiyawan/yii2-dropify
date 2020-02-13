@@ -19,7 +19,7 @@ use yii\widgets\InputWidget;
 class Dropify extends InputWidget
 {
     /**
-     * for option ```$('.dropify').dropify(pluginOptions);```
+     * for option ```$(#options['id']).dropify(pluginOptions);```
      * 
      * @var array $pluginOptions
      */
@@ -62,7 +62,7 @@ class Dropify extends InputWidget
         $view = $this->getView();
         DropifyAsset::register($view);
         $pluginOptions = Json::encode($this->pluginOptions);
-        $script = "$('#" . $this->options['id'] . "').dropify(" . $pluginOptions . ");";
+        $script        = "$('#{$this->options['id']}').dropify({$pluginOptions});";
         $this->view->registerJs($script, View::POS_READY);
     }
 }
