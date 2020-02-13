@@ -1,0 +1,47 @@
+{
+	"name": "diecoding/yii2-dropify",
+	"description": "Override your input files with style — Demo here : http://jeremyfagis.github.io/dropify",
+	"type": "yii2-widget",
+	"keywords": [
+		"yii2",
+		"widget",
+		"input",
+		"dropify",
+		"file",
+		"jquery"
+	],
+	"license": "BSD-3-Clause",
+	"support": {
+		"issues": "https://github.com/die-coding/yii2-dropify/issues",
+		"source": "https://github.com/die-coding/yii2-dropify"
+	},
+	"require": {
+		"php": ">=7.0",
+		"yiisoft/yii2": "~2.0",
+		"bower-asset/dropify": "@dev"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "<7"
+	},
+	"autoload": {
+		"psr-4": {
+			"diecoding\\dropify\\": "src"
+		}
+	},
+	"authors": [
+		{
+			"name": "Die Coding",
+			"email": "diecoding@gmail.com"
+		},
+		{
+			"name": "Sugeng Sulistiyawan",
+			"email": "sugeng.sulistiyawan@gmail.com"
+		}
+	],
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://asset-packagist.org"
+		}
+	]
+}
