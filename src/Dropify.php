@@ -9,6 +9,7 @@ use yii\web\View;
 use yii\widgets\InputWidget;
 
 /**
+ * @inheritDoc
  * 
  * @author Die Coding (Sugeng Sulistiyawan) <diecoding@gmail.com>
  * @copyright 2020 Die Coding
@@ -48,9 +49,9 @@ class Dropify extends InputWidget
         $this->registerAsset();
 
         if ($this->hasModel()) {
-            echo Html::activeFileInput($this->model, $this->attribute, $this->options);
+            return Html::activeFileInput($this->model, $this->attribute, $this->options);
         } else {
-            echo Html::fileInput($this->name, $this->value, $this->options);
+            return Html::fileInput($this->name, $this->value, $this->options);
         }
     }
 

@@ -1,16 +1,11 @@
 <?php
 
-/**
- * @link http://www.diecoding.com/
- * @author Die Coding (Sugeng Sulistiyawan) <diecoding@gmail.com>
- * @copyright Copyright (c) 2018
- */
-
 namespace diecoding\dropify;
 
 use yii\web\AssetBundle;
 
 /**
+ * @inheritDoc
  * 
  * @author Die Coding (Sugeng Sulistiyawan) <diecoding@gmail.com>
  * @copyright 2020 Die Coding
