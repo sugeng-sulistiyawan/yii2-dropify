@@ -9,7 +9,7 @@ use yii\web\View;
 use yii\widgets\InputWidget;
 
 /**
- * @inheritDoc
+ * @inheritdoc
  * 
  * @author Die Coding (Sugeng Sulistiyawan) <diecoding@gmail.com>
  * @copyright 2020 Die Coding
@@ -29,7 +29,7 @@ class Dropify extends InputWidget
     protected $_options;
 
     /**
-     * @inheritDoc
+     * @inheritdoc
      */
     public function init()
     {
@@ -42,7 +42,7 @@ class Dropify extends InputWidget
     }
 
     /**
-     * @inheritDoc
+     * @inheritdoc
      */
     public function run()
     {
@@ -56,7 +56,7 @@ class Dropify extends InputWidget
     }
 
     /**
-     * @inheritDoc
+     * @inheritdoc
      */
     public function registerAsset()
     {
