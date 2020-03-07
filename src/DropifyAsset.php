@@ -16,26 +16,26 @@ use yii\web\AssetBundle;
 class DropifyAsset extends AssetBundle
 {
     /**
-     * @var string $sourcePath
+     * @inheritdoc
      */
     public $sourcePath = '@bower/dropify/dist';
 
     /**
-     * @var array $css
+     * @inheritdoc
      */
     public $css = [
         YII_ENV_DEV ? 'css/dropify.css' : 'css/dropify.min.css',
     ];
 
     /**
-     * @var array $js
+     * @inheritdoc
      */
     public $js = [
         YII_ENV_DEV ? 'js/dropify.js' : 'js/dropify.min.js',
     ];
 
     /**
-     * @var array $depends
+     * @inheritdoc
      */
     public $depends = [
         'yii\web\YiiAsset',
