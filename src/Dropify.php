@@ -36,9 +36,10 @@ class Dropify extends InputWidget
         /**
          * Add preview for type .ico, .webp
          * Fixed Issue https://github.com/die-coding/yii2-dropify/issues/1
+         * Add preview for .svg too
          */
         if (empty($this->pluginOptions['imgFileExtensions'])) {
-            $this->pluginOptions['imgFileExtensions'] = ['png', 'jpg', 'jpeg', 'gif', 'bmp', 'ico', 'webp'];
+            $this->pluginOptions['imgFileExtensions'] = ['png', 'jpg', 'jpeg', 'gif', 'bmp', 'ico', 'webp', 'svg'];
         }
 
         $this->_options = [
