@@ -71,7 +71,11 @@ class Dropify extends InputWidget
         $view = $this->getView();
         DropifyAsset::register($view);
         $pluginOptions = Json::encode($this->pluginOptions);
-        $script        = "$('#{$this->options['id']}').dropify({$pluginOptions});";
+
+        $style = ".dropify-wrapper .dropify-message p {font-size: 14px;}";
+        $view->registerCss($style);
+
+        $script = "$('#{$this->options['id']}').dropify({$pluginOptions});";
         $view->registerJs($script, View::POS_READY);
     }
 }
