@@ -2,7 +2,7 @@
 
 All Notable changes to `yii2-dropify` will be documented in this file.
 
-# 0.1.1 - October 31, 2021
+# 0.3.0 - October 31, 2021
 
 ## Changed
 - Input Message Text Font Size
