@@ -54,10 +54,13 @@ or add to the require section of your `composer.json` file.
 use diecoding\yii2\dropify\Dropify;
 
 // Simple
-echo Dropify::widget();
+echo Dropify::widget([
+    'name' => 'image',
+]);
 
 // Advanced
 echo Dropify::widget([
+    'name' => 'image',
     'options' => [ 
         // options for input widget
     ],
