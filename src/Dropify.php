@@ -1,53 +1,89 @@
 <?php
 
-namespace diecoding\dropify;
+namespace diecoding\yii2\dropify;
 
+use diecoding\yii2\dropify\assets\DropifyAsset;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\helpers\Json;
-use yii\web\View;
 use yii\widgets\InputWidget;
 
 /**
- * @inheritdoc
+ * Dropify is class for widgets that collect user file inputs.
  * 
- * @author Die Coding (Sugeng Sulistiyawan) <diecoding@gmail.com>
- * @copyright 2020 Die Coding
- * @license BSD-3-Clause
- * @link https://www.diecoding.com
- * @since 2.0.14
+ * @link [sugeng-sulistiyawan.github.io](sugeng-sulistiyawan.github.io)
+ * @author Sugeng Sulistiyawan <sugeng.sulistiyawan@gmail.com>
+ * @copyright Copyright (c) 2023
  */
 class Dropify extends InputWidget
 {
     /**
-     * for option `$(#options['id']).dropify(pluginOptions);`
-     * 
-     * @var array $pluginOptions
+     * @var array image file extensions for show preview
+     */
+    public $imgFileExtensions = [
+        // Animated Portable Network Graphics
+        'apng',
+
+        // AV1 Image File Format
+        'avif',
+
+        // Graphics Interchange Format
+        'gif',
+
+        // Joint Photographic Expert Group image
+        'jpeg',
+        'jpg',
+        'jpeg',
+        'jfif',
+        'pjpeg',
+        'pjp',
+
+        // Portable Network Graphics
+        'png',
+
+        // Scalable Vector Graphics
+        'svg',
+
+        // Web Picture format
+        'webp',
+
+        // Bitmap file
+        'bmp',
+
+        // Microsoft Icon
+        'ico',
+        'cur',
+
+        // Tagged Image File Format
+        'tif',
+        'tiff',
+    ];
+
+    /**
+     * @var bool default `false`, `true` if use custom or external dropify assets
+     */
+    public $skipCoreAssets = false;
+
+    /**
+     * @var array default `[]`, for option `$(#options['id']).dropify(pluginOptions);`
      */
     public $pluginOptions = [];
-
-    protected $_options;
 
     /**
      * @inheritdoc
      */
     public function init()
     {
-        /**
-         * Add preview for type .ico, .webp
-         * Fixed Issue https://github.com/die-coding/yii2-dropify/issues/1
-         * Add preview for .svg too
-         */
-        if (empty($this->pluginOptions['imgFileExtensions'])) {
-            $this->pluginOptions['imgFileExtensions'] = ['png', 'jpg', 'jpeg', 'gif', 'bmp', 'ico', 'webp', 'svg'];
+        parent::init();
+
+        if ($this->skipCoreAssets === false) {
+            $this->view->registerAssetBundle(DropifyAsset::class);
         }
 
-        $this->_options = [
-            "class" => "dropify",
-        ];
-        $this->pluginOptions = ArrayHelper::merge($this->_options, $this->pluginOptions);
-
-        parent::init();
+        $this->pluginOptions = ArrayHelper::merge([
+            "class"             => "dropify",
+            "imgFileExtensions" => $this->imgFileExtensions,
+        ], $this->pluginOptions);
     }
 
     /**
@@ -55,28 +91,14 @@ class Dropify extends InputWidget
      */
     public function run()
     {
-        $this->registerAsset();
+        $pluginOptions = Json::encode($this->pluginOptions);
+
+        $this->view->registerJs("$('#{$this->options['id']}').dropify({$pluginOptions});");
 
         if ($this->hasModel()) {
             return Html::activeFileInput($this->model, $this->attribute, $this->options);
         } else {
             return Html::fileInput($this->name, $this->value, $this->options);
         }
-    }
-
-    /**
-     * @inheritdoc
-     */
-    public function registerAsset()
-    {
-        $view = $this->getView();
-        DropifyAsset::register($view);
-        $pluginOptions = Json::encode($this->pluginOptions);
-
-        $style = ".dropify-wrapper .dropify-message p {font-size: 14px;}";
-        $view->registerCss($style);
-
-        $script = "$('#{$this->options['id']}').dropify({$pluginOptions});";
-        $view->registerJs($script, View::POS_READY);
     }
 }
