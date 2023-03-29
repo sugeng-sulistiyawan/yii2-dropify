@@ -1,6 +1,6 @@
 <?php
 
-namespace diecoding\yii2\dropify\assets;
+namespace diecoding\dropify\assets;
 
 use Yii;
 use yii\web\AssetBundle;

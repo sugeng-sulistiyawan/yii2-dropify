@@ -18,7 +18,6 @@ Override your input files with style for Yii2
   - [Instalation](#instalation)
   - [Dependencies](#dependencies)
   - [Usage](#usage)
-    - [Upgrade from v0.3.0](#upgrade-from-v030)
     - [Forms/Views](#formsviews)
 
 ## Instalation
@@ -44,14 +43,10 @@ or add to the require section of your `composer.json` file.
 
 ## Usage
 
-### Upgrade from v0.3.0
-
-> Just find and replace all in your project from `diecoding\dropify` to `diecoding\yii2\dropify`
-
 ### Forms/Views
 
 ```php
-use diecoding\yii2\dropify\Dropify;
+use diecoding\dropify\Dropify;
 
 // Simple
 echo Dropify::widget([

@@ -1,8 +1,8 @@
 <?php
 
-namespace diecoding\yii2\dropify;
+namespace diecoding\dropify;
 
-use diecoding\yii2\dropify\assets\DropifyAsset;
+use diecoding\dropify\assets\DropifyAsset;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\helpers\Json;

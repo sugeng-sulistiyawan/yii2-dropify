@@ -31,12 +31,12 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"diecoding\\yii2\\dropify\\": "src/"
+			"diecoding\\dropify\\": "src/"
 		}
 	},
     "autoload-dev": {
         "psr-4": {
-            "diecoding\\yii2\\dropify\\tests\\": "tests/"
+            "diecoding\\dropify\\tests\\": "tests/"
         }
     },
     "repositories": [
