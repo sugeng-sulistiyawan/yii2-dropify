@@ -1,0 +1,14 @@
+language: php
+
+php:
+  - 7.4
+  - 8.0
+  - 8.1
+
+install:
+#  - composer global require "fxp/composer-asset-plugin:~1.4.4"
+  - export PATH="$HOME/.composer/vendor/bin:$PATH"
+  - composer install --prefer-dist --no-interaction
+
+#script:
+#  - phpunit

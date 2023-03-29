@@ -1,6 +1,12 @@
 {
 	"name": "diecoding/yii2-dropify",
-	"description": "Override your input files with style — Demo here : http://jeremyfagis.github.io/dropify",
+	"description": "Override your input files with style for Yii2",
+	"authors": [
+		{
+			"name": "Sugeng Sulistiyawan",
+			"email": "sugeng.sulistiyawan@gmail.com"
+		}
+	],
 	"type": "yii2-widget",
 	"keywords": [
 		"yii2",
@@ -10,38 +16,38 @@
 		"file",
 		"jquery"
 	],
-	"license": "BSD-3-Clause",
+	"license": "MIT",
 	"support": {
-		"issues": "https://github.com/die-coding/yii2-dropify/issues",
-		"source": "https://github.com/die-coding/yii2-dropify"
+		"issues": "https://github.com/sugeng-sulistiyawan/yii2-dropify/issues",
+		"source": "https://github.com/sugeng-sulistiyawan/yii2-dropify"
 	},
 	"require": {
-		"php": ">=5.6.0",
-		"yiisoft/yii2": "~2.0",
-		"bower-asset/dropify": "@dev"
+		"php": ">=7.4.0",
+		"yiisoft/yii2": "~2.0.0",
+		"bower-asset/dropify": "~0.2.2"
 	},
 	"require-dev": {
-		"phpunit/phpunit": "<7"
+		"phpunit/phpunit": "~9.5.0"
 	},
 	"autoload": {
 		"psr-4": {
-			"diecoding\\dropify\\": "src"
+			"diecoding\\yii2\\dropify\\": "src/"
 		}
 	},
-	"authors": [
-		{
-			"name": "Die Coding",
-			"email": "diecoding@gmail.com"
-		},
-		{
-			"name": "Sugeng Sulistiyawan",
-			"email": "sugeng.sulistiyawan@gmail.com"
-		}
-	],
-	"repositories": [
-		{
-			"type": "composer",
-			"url": "https://asset-packagist.org"
-		}
-	]
+    "autoload-dev": {
+        "psr-4": {
+            "diecoding\\yii2\\dropify\\tests\\": "tests/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    }
 }
