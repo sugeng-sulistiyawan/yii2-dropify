@@ -1,8 +1,7 @@
 <?php
 
-namespace diecoding\dropify\assets;
+namespace diecoding\dropify;
 
-use Yii;
 use yii\web\AssetBundle;
 use yii\web\YiiAsset;
 
@@ -40,20 +39,4 @@ class DropifyAsset extends AssetBundle
     public $depends = [
         YiiAsset::class,
     ];
-
-    /**
-     * @inheritdoc
-     */
-    public function init()
-    {
-        parent::init();
-
-        $css = <<< CSS
-.dropify-wrapper .dropify-message p {
-    font-size: 14px;
-}
-CSS;
-
-        Yii::$app->view->registerCss($css);
-    }
 }

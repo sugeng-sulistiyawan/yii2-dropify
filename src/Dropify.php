@@ -2,7 +2,6 @@
 
 namespace diecoding\dropify;
 
-use diecoding\dropify\assets\DropifyAsset;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\helpers\Json;
@@ -74,16 +73,16 @@ class Dropify extends InputWidget
      */
     public function init()
     {
-        parent::init();
-
         if ($this->skipCoreAssets === false) {
-            $this->view->registerAssetBundle(DropifyAsset::class);
+            $this->view->registerAssetBundle(DropifyCustomAsset::class);
         }
 
         $this->pluginOptions = ArrayHelper::merge([
             "class"             => "dropify",
             "imgFileExtensions" => $this->imgFileExtensions,
         ], $this->pluginOptions);
+
+        parent::init();
     }
 
     /**
