@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "60f0c38833e506265c0daafe546c52b4",
+    "content-hash": "b3ffd06e7f31eb77a4b7c82b87acb703",
     "packages": [
         {
             "name": "bower-asset/dropify",
