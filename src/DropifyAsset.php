@@ -17,7 +17,7 @@ class DropifyAsset extends AssetBundle
     /**
      * @inheritdoc
      */
-    public $sourcePath = '@bower/dropify/dist';
+    public $sourcePath = '@npm/dropify/dist';
 
     /**
      * @inheritdoc

@@ -24,7 +24,7 @@
 	"require": {
 		"php": ">=7.4.0",
 		"yiisoft/yii2": "~2.0",
-		"bower-asset/dropify": "~0.2"
+		"npm-asset/dropify": "~0.2"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~9.5.0"

@@ -4,32 +4,14 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b3ffd06e7f31eb77a4b7c82b87acb703",
+    "content-hash": "2af55b1c1a5560e77a503b3dd2183c52",
     "packages": [
-        {
-            "name": "bower-asset/dropify",
-            "version": "0.2.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/JeremyFagis/dropify.git",
-                "reference": "fbc86ac86b040cfe9cc787a933e3f9144b1b2033"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/JeremyFagis/dropify/zipball/fbc86ac86b040cfe9cc787a933e3f9144b1b2033",
-                "reference": "fbc86ac86b040cfe9cc787a933e3f9144b1b2033"
-            },
-            "require": {
-                "bower-asset/jquery": ">=1.8"
-            },
-            "type": "bower-asset"
-        },
         {
             "name": "bower-asset/inputmask",
             "version": "3.3.11",
             "source": {
                 "type": "git",
-                "url": "https://github.com/RobinHerbots/Inputmask.git",
+                "url": "git@github.com:RobinHerbots/Inputmask.git",
                 "reference": "5e670ad62f50c738388d4dcec78d2888505ad77b"
             },
             "dist": {
@@ -223,6 +205,33 @@
                 "source": "https://github.com/ezyang/htmlpurifier/tree/v4.16.0"
             },
             "time": "2022-09-18T07:06:19+00:00"
+        },
+        {
+            "name": "npm-asset/dropify",
+            "version": "0.2.2",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/dropify/-/dropify-0.2.2.tgz"
+            },
+            "require": {
+                "npm-asset/jquery": "*"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/jquery",
+            "version": "3.6.4",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/jquery/-/jquery-3.6.4.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
         },
         {
             "name": "paragonie/random_compat",
