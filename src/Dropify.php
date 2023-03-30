@@ -73,6 +73,8 @@ class Dropify extends InputWidget
      */
     public function init()
     {
+        parent::init();
+
         if ($this->skipCoreAssets === false) {
             $this->view->registerAssetBundle(DropifyCustomAsset::class);
         }
@@ -81,8 +83,6 @@ class Dropify extends InputWidget
             "class"             => "dropify",
             "imgFileExtensions" => $this->imgFileExtensions,
         ], $this->pluginOptions);
-
-        parent::init();
     }
 
     /**
