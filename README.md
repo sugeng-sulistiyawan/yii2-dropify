@@ -1,13 +1,14 @@
 # Yii2 Dropify
+
 Override your input files with style for Yii2
 
-[![Latest Stable Version](http://poser.pugx.org/diecoding/yii2-dropify/v)](https://packagist.org/packages/diecoding/yii2-dropify)
-[![Total Downloads](http://poser.pugx.org/diecoding/yii2-dropify/downloads)](https://packagist.org/packages/diecoding/yii2-dropify)
-[![Quality Score](https://img.shields.io/scrutinizer/g/sugeng-sulistiyawan/yii2-dropify.svg)](https://scrutinizer-ci.com/g/sugeng-sulistiyawan/yii2-dropify)
-[![Build Status](https://app.travis-ci.com/sugeng-sulistiyawan/yii2-dropify.svg?branch=master)](https://app.travis-ci.com/sugeng-sulistiyawan/yii2-dropify)
-[![Latest Unstable Version](http://poser.pugx.org/diecoding/yii2-dropify/v/unstable)](https://packagist.org/packages/diecoding/yii2-dropify)
-[![License](http://poser.pugx.org/diecoding/yii2-dropify/license)](https://packagist.org/packages/diecoding/yii2-dropify)
-[![PHP Version Require](http://poser.pugx.org/diecoding/yii2-dropify/require/php)](https://packagist.org/packages/diecoding/yii2-dropify)
+[![Latest Stable Version](https://img.shields.io/packagist/v/diecoding/yii2-dropify?label=stable)](https://packagist.org/packages/diecoding/yii2-dropify)
+[![Total Downloads](https://img.shields.io/packagist/dt/diecoding/yii2-dropify)](https://packagist.org/packages/diecoding/yii2-dropify)
+[![Latest Stable Release Date](https://img.shields.io/github/release-date/sugeng-sulistiyawan/yii2-dropify)](https://github.com/sugeng-sulistiyawan/yii2-dropify)
+[![Quality Score](https://img.shields.io/scrutinizer/quality/g/sugeng-sulistiyawan/yii2-dropify)](https://scrutinizer-ci.com/g/sugeng-sulistiyawan/yii2-dropify)
+[![Build Status](https://img.shields.io/travis/com/sugeng-sulistiyawan/yii2-dropify)](https://app.travis-ci.com/sugeng-sulistiyawan/yii2-dropify)
+[![License](https://img.shields.io/github/license/sugeng-sulistiyawan/yii2-dropify)](https://github.com/sugeng-sulistiyawan/yii2-dropify)
+[![PHP Version Require](https://img.shields.io/packagist/dependency-v/diecoding/yii2-dropify/php?color=6f73a6)](https://packagist.org/packages/diecoding/yii2-dropify)
 
 > Yii2 Dropify uses [Dropify](https://github.com/JeremyFagis/dropify) <br> Demo: http://jeremyfagis.github.io/dropify
 
