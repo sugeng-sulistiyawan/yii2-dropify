@@ -23,8 +23,7 @@ Override your input files with style for Yii2
 
 ## Instalation
 
-Package is available on [Packagist](https://packagist.org/packages/diecoding/yii2-dropify), 
-you can install it using [Composer](https://getcomposer.org).
+Package is available on [Packagist](https://packagist.org/packages/diecoding/yii2-dropify), you can install it using [Composer](https://getcomposer.org).
 
 ```shell
 composer require diecoding/yii2-dropify "^1.0"
