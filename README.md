@@ -157,3 +157,7 @@ echo $form->field($model, 'image')->widget(Dropify::class, [
     'skipCoreAssets' => false, // (bool) default `false`, `true` if use custom or external dropify assets
 ]);
 ```
+
+---
+
+Read more docs: https://sugengsulistiyawan.my.id/docs/opensource/yii2/dropify/
